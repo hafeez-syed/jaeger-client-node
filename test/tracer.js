@@ -215,7 +215,7 @@ describe('tracer should', () => {
         let carrier = {};
 
         tracer.inject(savedContext, opentracing.FORMAT_HTTP_HEADERS, carrier);
-        assert.equal(carrier['UberCtx-keyOne'], 'Leela%20vs.%20Bender');
+        assert.equal(carrier['uberctx-keyOne'], 'Leela%20vs.%20Bender');
     });
 
     it ('assert inject and extract throw errors when given an invalid format', () => {
