@@ -54,3 +54,7 @@ var SAMPLER_TYPE_RATE_LIMITING = exports.SAMPLER_TYPE_RATE_LIMITING = 'ratelimit
 
 // SAMPLER_TYPE_REMOTE is the type of sampler that polls Jaeger agent for sampling strategy.
 var SAMPLER_TYPE_REMOTE = exports.SAMPLER_TYPE_REMOTE = "remote";
+
+// EMIT_SPAN_BATCH_OVERHEAD is the rough estimate of header space taken up in a
+// thrift frame.
+var EMIT_SPAN_BATCH_OVERHEAD = exports.EMIT_SPAN_BATCH_OVERHEAD = 30;
